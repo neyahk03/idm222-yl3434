@@ -1,2 +1,2 @@
-# idm222-yl3434
+# IDM 222 Web Authoring II final project
  
