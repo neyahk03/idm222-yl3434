@@ -20,8 +20,8 @@
 
             <div class="navbar">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Project</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="project.html">Project</a></li>
                     <li><a href="">About</a></li>
                 </ul>
             </div>
@@ -37,35 +37,77 @@
 
     <h2>Selected Projects</h2>
     
-    <div class="card">
-        <div></div>
-        <h3>Name of the project</h3>
-        <p class="tag">ui/ux</p>
-        <p class="tag">graphic designer</p>
-    </div>
+    <div onmouseover="makeActive(this)" onmouseout="undo(this)" class="card" id="card1">
+        <div class="img"></div>
 
-    
-
-    <div class="card">
-        <div>image</div>
-        <h3>Name of the project</h3>
-        <p class="tag">ui/ux</p>
-        <p class="tag">graphic designer</p>
+        <div class="content-desktop" id="content-desktop1">
+            <h3>Name of the project</h3>
+            <p class="tag">ui/ux</p>
+            <p class="tag">graphic designer</p>
         </div>
 
-    <div class="card">
-        <div>image</div>
-        <h3>Name of the project</h3>
-        <p class="tag">ui/ux</p>
-        <p class="tag">graphic designer</p>
+
+        <div class="content-mobile">
+            <h3>Name of the project</h3>
+            <p class="tag">ui/ux</p>
+            <p class="tag">graphic designer</p>
+        </div>
     </div>
 
-    <div class="card">
-        <div>image</div>
-        <h3>Name of the project</h3>
-        <p class="tag">ui/ux</p>
-        <p class="tag">graphic designer</p>
+    <div onmouseover="makeActive(this)" onmouseout="undo(this)" class="card" id="card2">
+        <div class="img" >
+            <img src="images/xe.jpg" alt="yen">
+        </div>
+
+        <div class="content-desktop" id="content-desktop2">
+            <h3>Name of the project</h3>
+            <p class="tag">ui/ux</p>
+            <p class="tag">graphic designer</p>
+        </div>
+
+
+        <div class="content-mobile">
+            <h3>Name of the project</h3>
+            <p class="tag">ui/ux</p>
+            <p class="tag">graphic designer</p>
+        </div>
+        
+        
     </div>
+
+    <div onmouseover="makeActive(this)" onmouseout="undo(this)" class="card" id="card3">
+        <div class="img"></div>
+        
+        <div class="content-desktop" id="content-desktop3">
+            <h3>Name of the project</h3>
+            <p class="tag">ui/ux</p>
+            <p class="tag">graphic designer</p>
+        </div>
+
+
+        <div class="content-mobile">
+            <h3>Name of the project</h3>
+            <p class="tag">ui/ux</p>
+            <p class="tag">graphic designer</p>
+        </div>
+    </div>
+
+    <div onmouseover="makeActive(this)" onmouseout="undo(this)" class="card" id="card4">
+        <div class="img"></div>
+        <div class="content-desktop" id="content-desktop4">
+            <h3>Name of the project</h3>
+            <p class="tag">ui/ux</p>
+            <p class="tag">graphic designer</p>
+        </div>
+
+
+        <div class="content-mobile">
+            <h3>Name of the project</h3>
+            <p class="tag">ui/ux</p>
+            <p class="tag">graphic designer</p>
+        </div>
+    </div>
+    
     
     <div class="pic">
         <img src="images/yen5-bw.png" alt="yen sitting">
@@ -105,6 +147,6 @@
         </div>
     </footer>
 
-
+    <script src="index.js"></script>
 </body>
 </html>           
