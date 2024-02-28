@@ -25,3 +25,18 @@ function undo(x) {
     }
 }
 
+
+
+const menuButton = document.querySelector('.btn_menu');
+const menu = document.querySelector('.menu');
+
+menuButton.addEventListener('click', () => {
+    menuButton.classList.toggle('change');
+    menu.classList.toggle('open');
+})
+
+
+
+
+
+
