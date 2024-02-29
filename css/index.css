@@ -6,7 +6,6 @@
 }
 
 html {
-
     --red: #7D1100;
     --blue: #0E1147;
     --beige: #F4E6BD;
@@ -96,7 +95,7 @@ button {
 
 
 .menu {
-    opacity: 0;
+    transform: translateX(100vw);
     transition: 0.3s ease-in;
 
     background-color: var(--foreground-color);
@@ -133,12 +132,17 @@ button {
         a:visited {
             color: var(--background-color);
         }
+
+        a:active {
+            text-decoration: underline;
+        }
     }
 }
 
 
 .menu.open {
-    opacity: 1;
+    /* opacity: 1; */
+    transform: none;
 }
 
 /* intro */
