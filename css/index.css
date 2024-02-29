@@ -95,19 +95,22 @@ button {
 
 
 .menu {
-    transform: translateX(100vw);
-    transition: 0.3s ease-in;
-
     background-color: var(--foreground-color);
     grid-column: 1/8;
     grid-row-start: 1;
-    z-index: 50;
-    
-    height: 100vh;
-
     text-align: center;
     font-family: var(--font-bold);
+    position: fixed;
+    width: 100vw;
 
+    transform: translateX(100vw);
+    transition: transform 225ms ease-in-out;
+    z-index: 50;
+    right: 0;
+    top: 0;
+    height: 100vh;
+
+    
     ul {
         margin: 0;
         padding: 0;
@@ -127,10 +130,15 @@ button {
 
         a {
             text-decoration: none;
+            color: var(--background-color);
         }
 
         a:visited {
             color: var(--background-color);
+        }
+
+        a:active {
+            text-decoration:underline;
         }
 
         a:active {
@@ -141,7 +149,6 @@ button {
 
 
 .menu.open {
-    /* opacity: 1; */
     transform: none;
 }
 
