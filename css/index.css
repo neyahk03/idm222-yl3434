@@ -5,6 +5,11 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'poppinsregular';
+    src: url();
+}
+
 html {
     --red: #7D1100;
     --blue: #0E1147;
@@ -483,6 +488,10 @@ footer {
         bottom: 3px;
     }
 
+    .navbar ul li a:active{
+        text-decoration: none;
+    }
+
     .card {
         grid-column: 3/span 5;
         width: 100%;
@@ -538,13 +547,13 @@ footer {
         grid-column: 2/14;
         grid-template-columns: 3fr 2fr;
 
-        align-items: center;
+        /* align-items: center; */
+    }
 
-        div p{
-            font-size: 7rem;
-            margin: 0;
-            text-align: start;
-        }
+    footer div{
+        font-size: 7rem;
+        margin: 0;
+        text-align: left;
     }
 
     .social ul {
