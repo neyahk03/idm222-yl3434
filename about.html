@@ -9,42 +9,76 @@
 </head>
 
 <body>
-    
+
+    <header>
         <nav>
-            <ul>
-                <li>Home</li>
-                <li>Project</li>
-                <li>About</li>
-            </ul>
+            <button class="btn_menu">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+            </button>
+
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
         </nav>
 
-            <p class="hello"><strong>Hello</strong>(again)</p>
-            <div class="star"></div>
-            <p class="intro">Sausage roll pie 'n' sauce commercial radio DIY earthmoving bag of sparks we deliver trench digger youtube tutorials. Tools down dyna bolt pub? air compressor call a handyman the right tool for the right job. Tooltalk duck in to the hardware I'll hand dig this sparky the site office renovation monster tough as nails chuck it in the ute. Weekend warrior beer o'clock hire tools grinding everyone's a handyman we're putting in some decking coffee break works a treat left handed screwdrivers. Gonna need another hammer laying concrete the right tools cash in hand put some back into it De Walt.</p>
+        <strong class="title">A bit about me</strong>
+    </header>
 
-        <!-- <img class="pic" src="images/yen4-bw.png" alt="yen"> -->
+    <main>
+        <img class="profile" src="images/luongyen.jpeg" alt="Yen Luong's profile pic">
 
-        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="66" height="81" viewBox="0 0 66 81" fill="none">
-            <mask id="path-1-inside-1_234_139" fill="white">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M37.1835 33.0818L33 0L28.7905 33.2873L16.5966 25.0502L24.7668 35.7825L0 40.5L25.6184 45.3797L16.5737 58.2744L28.8959 48.5468L33 81L37.187 47.8908L49.7434 56.3728L41.2488 45.2145L66 40.5L40.9432 35.7273L49.7663 23.1486L37.1835 33.0818Z"/>
-            </mask>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M37.1835 33.0818L33 0L28.7905 33.2873L16.5966 25.0502L24.7668 35.7825L0 40.5L25.6184 45.3797L16.5737 58.2744L28.8959 48.5468L33 81L37.187 47.8908L49.7434 56.3728L41.2488 45.2145L66 40.5L40.9432 35.7273L49.7663 23.1486L37.1835 33.0818Z" fill="#F4E6BD"/>
-            <path d="M33 0L35.9763 -0.376384L30.0237 -0.376384L33 0ZM37.1835 33.0818L34.2073 33.4582L34.8736 38.7275L39.0424 35.4365L37.1835 33.0818ZM28.7905 33.2873L27.1112 35.7733L31.1546 38.5046L31.7668 33.6637L28.7905 33.2873ZM16.5966 25.0502L18.2758 22.5642L14.2095 26.8674L16.5966 25.0502ZM24.7668 35.7825L25.3282 38.7296L30.0902 37.8225L27.1539 33.9654L24.7668 35.7825ZM0 40.5L-0.561332 37.553L-0.561332 43.447L0 40.5ZM25.6184 45.3797L28.0745 47.1024L30.7406 43.3014L26.1797 42.4326L25.6184 45.3797ZM16.5737 58.2744L14.1176 56.5516L18.4325 60.6291L16.5737 58.2744ZM28.8959 48.5468L31.8722 48.1704L31.2059 42.9011L27.0371 46.1921L28.8959 48.5468ZM33 81L30.0237 81.3764L35.9763 81.3764L33 81ZM37.187 47.8908L38.8663 45.4048L34.8229 42.6735L34.2107 47.5144L37.187 47.8908ZM49.7434 56.3728L48.0641 58.8588L52.1304 54.5556L49.7434 56.3728ZM41.2488 45.2145L40.6875 42.2675L35.9255 43.1745L38.8618 47.0316L41.2488 45.2145ZM66 40.5L66.5613 43.447L66.5613 37.553L66 40.5ZM40.9432 35.7273L38.4872 34.0046L35.821 37.8056L40.3819 38.6743L40.9432 35.7273ZM49.7663 23.1486L52.2223 24.8714L47.9074 20.7939L49.7663 23.1486ZM30.0237 0.376384L34.2073 33.4582L40.1598 32.7054L35.9763 -0.376384L30.0237 0.376384ZM31.7668 33.6637L35.9763 0.376384L30.0237 -0.376384L25.8142 32.9109L31.7668 33.6637ZM14.9173 27.5361L27.1112 35.7733L30.4698 30.8014L18.2758 22.5642L14.9173 27.5361ZM27.1539 33.9654L18.9836 23.233L14.2095 26.8674L22.3798 37.5997L27.1539 33.9654ZM0.561332 43.447L25.3282 38.7296L24.2055 32.8355L-0.561332 37.553L0.561332 43.447ZM26.1797 42.4326L0.561332 37.553L-0.561332 43.447L25.0571 48.3267L26.1797 42.4326ZM19.0297 59.9971L28.0745 47.1024L23.1624 43.6569L14.1176 56.5516L19.0297 59.9971ZM27.0371 46.1921L14.7148 55.9197L18.4325 60.6291L30.7548 50.9015L27.0371 46.1921ZM35.9763 80.6236L31.8722 48.1704L25.9197 48.9232L30.0237 81.3764L35.9763 80.6236ZM34.2107 47.5144L30.0237 80.6236L35.9763 81.3764L40.1633 48.2672L34.2107 47.5144ZM51.4227 53.8869L38.8663 45.4048L35.5077 50.3768L48.0641 58.8588L51.4227 53.8869ZM38.8618 47.0316L47.3564 58.19L52.1304 54.5556L43.6359 43.3973L38.8618 47.0316ZM65.4387 37.553L40.6875 42.2675L41.8102 48.1615L66.5613 43.447L65.4387 37.553ZM40.3819 38.6743L65.4387 43.447L66.5613 37.553L41.5045 32.7803L40.3819 38.6743ZM47.3102 21.4259L38.4872 34.0046L43.3992 37.4501L52.2223 24.8714L47.3102 21.4259ZM39.0424 35.4365L51.6252 25.5033L47.9074 20.7939L35.3247 30.7271L39.0424 35.4365Z" fill="#F4E6BD" mask="url(#path-1-inside-1_234_139)"/>
-            </svg> -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, porro impedit! Suscipit placeat officia molestiae delectus. Quia voluptas corrupti libero repudiandae ducimus, eius veniam illo itaque qui, architecto commodi eos.
+        Ad neque non deleniti tempore, velit minus eius laboriosam veniam, odit atque sit ex explicabo, dolore alias praesentium animi exercitationem dignissimos? Distinctio sint voluptas sequi eaque quasi? Voluptatem, dolor quam?</p>
+    </main>
+    
 
-        <div class="bar">
-            <p>Selected projects</p>
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>Let's connect</p>
+
+        <div class="social-icon">
+                <a href="https://github.com/neyahk03" target="_blank">
+                    <img src="icons/github-beige.png" alt="github icon">
+                </a>
+                
+                <a href="" target="_blank">
+                    <img src="icons/mail-beige.png" alt="email icon">
+                </a>
+
+                <a href="" target="_blank">
+                    <img src="icons/ig-beige.png" alt="ig icon">
+                </a>
+
+                <a href="" target="">
+                    <img src="icons/linkedin-beige.png" alt="linkedin icon">
+                </a>
+
         </div>
 
-        <div class="project">
-            <div>project 1</div>
-            <div>project 2</div>
-            <div>project 3</div>
-            <div>project 4</div>
+        <div class="social">
+            <ul>
+                <li><a href="https://github.com/neyahk03" target="_blank">GITHUB</a></li>
+                <li><a href="gmail.com" target="_blank">EMAIL</a></li>
+                <li><a href="instagram.com" target="_blank">INSTAGRAM</a> </li>
+                <li><a href="linkedin.com" target="_blank">LINKEDIN</a></li>
+            </ul>
         </div>
+    </footer>
 
-
-
+    <script src="scripts/index.js"></script>
     
 
     
