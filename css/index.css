@@ -448,7 +448,7 @@ footer {
     
     strong {
         font-size: 8rem;
-        grid-column-start: 3;
+        grid-column: 3/15;
     }
 
     button.btn_menu {
@@ -462,10 +462,6 @@ footer {
     nav {
         grid-column: 1/span 14;
         margin-right: 7rem;
-    }
-
-    strong {
-        grid-column-end: 15;
     }
 
     .intro {

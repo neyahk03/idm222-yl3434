@@ -35,7 +35,7 @@ body {
 
     display: grid;
     grid-template-columns: 1rem repeat(5, 1fr) 1rem;
-    grid-template-rows: 5rem repeat(4, auto) 2rem;
+    grid-template-rows: 5rem repeat(5, auto) 2rem;
     grid-column-gap: 1rem;
 
     color: var(--background-color);
@@ -50,7 +50,7 @@ header {
     grid-area: 1 / 1 / span 2 / span 7;
 
     display: grid;
-    grid-template-rows: 56px 1fr 1fr;
+    grid-template-rows: 56px 1fr;
     grid-template-columns: 1rem repeat(4, 1fr) 1rem;
     grid-column-gap: 1rem;
 }
@@ -177,15 +177,32 @@ img.sticker {
 }
 
 main {
-    grid-column: 2/6;
-    grid-row-start: 5;
+    grid-column: 2/7;
+    grid-row-start: 3;
+    margin-top: 2rem;
+
+    display: grid;
+    grid-column: 1fr;
+
+    /* border: 5px solid black; */
+    /* border-radius: 20px;
+    padding: 1rem;
+    background-color: var(--accent-color-1); */
 }
 
 .profile {
-    grid-column: 2/span 5;
-    width: 70%;
+    width: 100%;
+    border: 5px solid var(--accent-color-1);
+    box-shadow: 5px 5px var(--accent-color-1);
+    border-radius: 15px;
 
 }
+
+.introduction {
+    line-height: 1.5rem;
+}
+
+
 
 /* img.sleeping {
     display: absolute;
@@ -201,7 +218,7 @@ footer {
     font-size: 3rem;
     color: var(--background-color);
 
-    grid-row: 12/13;
+    grid-row: 4/5;
     grid-column: 2/span 5;
 
     display: grid;
@@ -235,7 +252,7 @@ footer {
     }
 
     header {
-        grid-area: 1 / 1 / span 4/ span 8;
+        grid-area: 1 / 1 / span 2/ span 8;
         grid-template-columns: 2rem repeat(6, 1fr) 2rem;
         grid-template-rows: 96px auto auto;
         grid-column-gap: 2rem;
@@ -293,50 +310,23 @@ footer {
     }
 
     strong {
-        grid-column: 2/ span 5;
-        font-size: 5rem;
-    }
-
-    .pic {
-        grid-column: 6/8;
-        grid-row: 3/7;
-    }
-
-    .intro {
-        font-size: 1.25rem;
-        grid-column-end: span 4;
-    }
-
-    h2 {
-        font-size: 3rem;
-        grid-row: 5/6;
-        grid-column: 2/span 4;
-    }
-
-    div.project {
         grid-column: 2/ span 6;
-
-        grid-template-columns: repeat(2, 2fr);
-        grid-column-gap: 2rem;
-
+        font-size: 6rem;
     }
 
-    .card{
-        grid-column-end: span 3;
-        grid-row-end: span 2;
-    }
+    main {
+        grid-column-end: span 6;
+        
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1.5rem;
 
-    .card:first-of-type{
-        align-self: end;
-    }
+        img {
+            width: 50%;
+        }
 
-    .card:nth-child(even) {
-        grid-column-start: 5;
-    }
-
-    img.sticker {
-        grid-column: 2/ span 3;
-        grid-row: 10/span 2;
+        p {
+            margin: 0;
+        }
     }
     
     footer {
@@ -376,12 +366,12 @@ footer {
 @media screen and (min-width: 1200px) {
     body {
         grid-template-columns: 7rem repeat(12, 1fr) 7rem;
-        grid-template-rows: repeat(4, 8rem) repeat(8, auto) 2rem;
+        grid-template-rows: repeat(1, 8rem) repeat(3, auto) 2rem;
         grid-column-gap: 2rem;
     }
 
     header {
-        grid-column-end: span 14;
+        grid-column: 1/15;
         grid-template-rows: 96px;
 
         grid-template-columns: 7rem repeat(12, 1fr) 7rem;
@@ -389,7 +379,8 @@ footer {
     
     strong {
         font-size: 8rem;
-        grid-column-start: 3;
+        grid-column: 3/13;
+
     }
 
     button.btn_menu {
@@ -403,10 +394,6 @@ footer {
     nav {
         grid-column: 1/span 14;
         margin-right: 7rem;
-    }
-
-    strong {
-        grid-column-end: 15;
     }
 
     .intro {
@@ -473,32 +460,31 @@ footer {
         }
     }
 
+    main {
+        grid-column: 2/14;
 
-    .card:first-of-type{
-        align-self: end;
+        grid-template-columns: 2fr 3fr;
+        align-items: center;
+        grid-gap: 4rem;
+
     }
 
-    .card:nth-child(even) {
-        grid-column-start: 8;
+    .introduction {
+        font-size: 1.25rem;
+        line-height: 2rem;
+        font-weight: 300;
     }
-
-    img.sticker {
-        width: 75%;
-        grid-column: 3/span 5;
-        justify-items: center;
-    }
-
-    /* img.sleeping {
-        display: flex;
-        grid-column-start: 2;
-        grid-row-end: 5;
-    } */
 
     footer {
         grid-column: 2/14;
         grid-template-columns: 3fr 2fr;
 
         align-items: center;
+    }
+
+    .profile:hover {
+        box-shadow: none;
+        transform: translate(5px, 5px);
     }
 
     footer div{
