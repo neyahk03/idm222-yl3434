@@ -245,6 +245,7 @@ main.project {
 }
 
 h3 {
+    font-size: 1.25rem;
     margin: 1rem 0;
     font-size: 2rem;
     font-family: var(--font-bold);
