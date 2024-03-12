@@ -5,6 +5,22 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'poppinsregular';
+    src: url('../fonts/poppins-regular-webfont.woff2') format('woff2'),
+         url('../fonts/poppins-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppinslight';
+    src: url('../fonts/poppins-light-webfont.woff2') format('woff2'),
+         url('../fonts/poppins-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
     --red: #7D1100;
     --blue: #0E1147;
@@ -18,8 +34,10 @@ html {
     --accent-color-2: var(--blue);
     --accent-color-3: var(--light-blue);
 
-    --font-regular: 'Poppins';
-    --font-bold: 'phudublack', 'Poppins';
+
+    --font-light: 'poppinslight';
+    --font-regular: 'poppinsregular';
+    --font-bold: 'phudublack', var(--font-regular);
 
     --rhythm: 2rem;
 
@@ -472,7 +490,7 @@ footer {
     .introduction {
         font-size: 1.25rem;
         line-height: 2rem;
-        font-weight: 300;
+        font-family: var(--font-light);
     }
 
     footer {
