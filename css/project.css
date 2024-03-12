@@ -208,13 +208,6 @@ main.project {
 
 .card {
     grid-column: 2/ span 5;
-}
-
-.card:first-of-type {
-    margin-top: 2rem;
-}
-
-.card + .card {
     margin: 2rem 0;
 }
 
@@ -235,8 +228,27 @@ main.project {
     display: none;
 }
 
+.content-mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.5rem;
+}
+
+.content-mobile a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+    font-family: var(--font-bold);
+    color: var(--accent-color-1);
+}
+
+.tag img {
+    width: 30px;
+}
+
 .tag {
-    border: 1px solid var(--accent-color-1);
     color: var(--accent-color-1);
     border-radius: 20px;
     display: inline;
@@ -244,12 +256,12 @@ main.project {
     font-size: 0.8rem;
 }
 
-h3 {
+/* h3 {
     font-size: 1.25rem;
     margin: 1rem 0;
     font-family: var(--font-bold);
     color: var(--accent-color-1);
-}
+} */
 
 img.sticker {
     grid-row-start: 11;
@@ -610,12 +622,20 @@ footer {
     }
 
     h3 {
+        font-size: 2rem;
+        margin: 1rem 0;
+        font-family: var(--font-bold);
         color: var(--background-color);
+
     }
     
     .tag {
         border: 1px solid var(--background-color);
         color: var(--background-color);
+        font-size: 0.8rem;
+        padding: 0.5rem 0.8rem;
+        border-radius: 20px;
+        text-decoration: none;
     }
 
     footer {
