@@ -198,7 +198,7 @@ div.line {
 h2 {
     font-family: var(--font-bold);
     font-size: 2rem;
-    color: var(--red);
+    color: var(--foreground-color);
     margin: 1.5rem 0;
     align-self: center;
 
@@ -228,10 +228,11 @@ img {
 }
 
 .card div.img {
-    border: 2px solid red;
+    border: 4px solid var(--foreground-color);
     aspect-ratio: 4/3;
     overflow: hidden;
     position: relative;
+    border-radius: 15px;
 
     img {
         height: fit-content;
@@ -244,15 +245,18 @@ img {
 }
 
 .tag {
-    border: 1px solid black;
+    border: 1px solid var(--accent-color-1);
     border-radius: 20px;
     display: inline;
     padding: 0.5rem 0.8rem;
     font-size: 0.8rem;
+    color: var(--accent-color-1)
 }
 
 h3 {
     margin: 1rem 0;
+    font-family: var(--font-bold);
+    color: var(--accent-color-1);
 }
 
 img.sticker {
@@ -539,15 +543,26 @@ footer {
         justify-content: center;
         align-items: center;    
         flex-direction: column;
+        border-radius: 15px;
 
         h3 {
             font-size: 2rem;
         }
     }
 
+    h3 {
+        color: var(--background-color);
+    }
+    
+    .tag {
+        border: 1px solid var(--background-color);
+        color: var(--background-color);
+    }
+
 
     .card:first-of-type{
         align-self: end;
+        margin-bottom: 2rem;
     }
 
     .card:nth-child(even) {

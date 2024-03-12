@@ -201,6 +201,7 @@ main {
 
     display: grid;
     grid-column: 1fr;
+    align-items: center;
 
     /* border: 5px solid black; */
     /* border-radius: 20px;
@@ -218,6 +219,7 @@ main {
 
 .introduction {
     line-height: 1.5rem;
+    margin-top: 2rem;
 }
 
 
@@ -475,14 +477,14 @@ footer {
 
         h3 {
             font-size: 2rem;
+            font-family: var(--font-bold);
         }
     }
 
     main {
-        grid-column: 2/14;
+        grid-column: 3/13;
 
-        grid-template-columns: 2fr 3fr;
-        align-items: center;
+        grid-template-columns: 2fr 3r;
         grid-gap: 4rem;
 
     }
