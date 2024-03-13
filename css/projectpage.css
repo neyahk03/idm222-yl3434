@@ -188,6 +188,7 @@ main {
     grid-column: 2/7;
     grid-row-start: 4;
     margin-top: 2rem;
+    margin: 0 auto;
 
     display: grid;
     grid-column: 1fr;
@@ -196,9 +197,29 @@ main {
     color: var(--foreground-color);
 }
 
-.introduction {
+h3 {
+    margin: 0;
+}
+
+.description {
     line-height: 1.5rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
+}
+
+
+
+.web {
+    width: 80vw;
+    aspect-ratio: 3/2;
+    overflow: auto;
+    margin: 0 auto;
+    border: 4px solid var(--accent-color-1);
+    border-radius: 15px;
+    
+    img{
+        width: 100%;
+        
+    }
 }
 
 /* footer */
@@ -380,7 +401,7 @@ footer {
     }
     
     strong {
-        font-size: 8rem;
+        font-size: 6rem;
         grid-column: 3/13;
     }
 
@@ -395,12 +416,6 @@ footer {
     nav {
         grid-column: 1/span 14;
         margin-right: 7rem;
-    }
-
-
-    .intro {
-        grid-column: 3/10;
-        
     }
 
     .navbar ul li a:hover {
@@ -432,7 +447,7 @@ footer {
 
     }
     
-    .introduction {
+    .description {
         font-size: 1.25rem;
         line-height: 2rem;
         font-family: var(--font-light);
