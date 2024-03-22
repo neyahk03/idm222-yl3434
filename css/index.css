@@ -238,6 +238,7 @@ h2 {
 
     img {
         height: 100%;
+        transform: translateX(-30px);
     }
 
 }
