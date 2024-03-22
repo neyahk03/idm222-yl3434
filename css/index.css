@@ -8,7 +8,7 @@
 @font-face {
     font-family: 'poppinsregular';
     src: url('../fonts/poppins-regular-webfont.woff2') format('woff2'),
-         url('../fonts/poppins-regular-webfont.woff') format('woff');
+         url('../fonts/poppins-regular-webffont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -27,6 +27,7 @@ html {
     --beige: #F4E6BD;
     --light-blue: #3E416C;
     --dark-red: #5E0D00;
+    --white: #dad5c6;
 
     --background-color: var(--beige);
     --foreground-color: var(--red);
@@ -215,9 +216,6 @@ h2 {
     /* align-self: end; */
 }
 
-img {
-    width: 100%;
-}
 
 .card {
     grid-column: 2/ span 5;
@@ -239,7 +237,7 @@ img {
     border-radius: 15px;
 
     img {
-        height: fit-content;
+        height: 100%;
     }
 
 }
@@ -273,8 +271,14 @@ img.sticker {
     grid-column: 2/span 5;
     margin: 1rem 0;
     width: 75%;
-    justify-self: center;
+    justify-self: center
 }
+/* 
+.photo {
+    height: 390px;
+    transform: translateX(-39.5px);
+
+} */
 
 /* footer */
 footer {
@@ -581,6 +585,10 @@ footer {
         width: 75%;
         grid-column: 3/span 5;
         justify-items: center;
+    }
+
+    .photo {
+        height: fit-content;
     }
 
     /* img.sleeping {

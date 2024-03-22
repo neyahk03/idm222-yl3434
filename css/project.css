@@ -208,8 +208,14 @@ main.project {
 
 .card {
     grid-column: 2/ span 5;
-    margin: 2rem 0;
+    margin: 0.8rem 0;
 }
+
+.card + .card {
+    margin-top: 0;
+}
+
+
 
 .card div.img {
     border: 4px solid var(--foreground-color);
@@ -219,7 +225,7 @@ main.project {
     border-radius: 15px;
 
     img {
-        height: fit-content;
+        height: 100%;
     }
 
 }
@@ -419,6 +425,8 @@ footer {
     main div.card{
         grid-column-end: span 3;
         grid-row-end: span 2;
+
+        margin: 0;
     }
 
 
@@ -543,13 +551,14 @@ footer {
         grid-template-columns: 7rem repeat(12, 1fr) 7rem;
     }
 
-    .card {
+    main div.card {
         grid-column: 3/span 5;
         width: 100%;
         padding: 0;
         position: relative;
         display: flex;
         aspect-ratio: 4/3;
+        margin: 2rem 0;
 
         .content-mobile {
             display: none;
@@ -561,6 +570,7 @@ footer {
     #card1{
         grid-row-start: 1;
         grid-column: 2/span 7;
+        margin-top: 0;
     }
 
     #card2 {

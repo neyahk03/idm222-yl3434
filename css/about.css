@@ -201,7 +201,7 @@ main {
 
     display: grid;
     grid-column: 1fr;
-    align-items: center;
+    align-items: flex-start;
 
     /* border: 5px solid black; */
     /* border-radius: 20px;
@@ -219,7 +219,11 @@ main {
 
 .introduction {
     line-height: 1.5rem;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
+    
+    p + p {
+        margin-top: 1rem;
+    }
 }
 
 
