@@ -507,6 +507,10 @@ footer {
         grid-column: 3/ span 5;
     }
 
+    .navbar ul li a {
+        color: var(--background-color);
+    }
+
     .navbar ul li a:hover {
         /* border: 3px solid var(--background-color); */
         text-shadow: 5px 5px var(--accent-color-1);
