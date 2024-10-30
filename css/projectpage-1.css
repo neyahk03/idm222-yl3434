@@ -206,9 +206,11 @@ main {
 
 h3 {
     font-family: var(--font-phudu-bold);
-    color: var(--dark-red);
-    font-size: 1.5rem;
+    color: var(--foreground-color);
+    font-size: 1.9rem;
     margin-top: 3rem;
+
+    text-align: center;
 }
 
 strong{
@@ -221,6 +223,11 @@ strong{
 p, main ul {
     line-height: 2rem;
 }
+
+li::marker {
+    color: var(--dark-red);
+}
+
 
 .overview {
     background-color: var(--foreground-color);
@@ -535,13 +542,11 @@ footer {
     }
 
 
-    h3 {
-        font-size: 2rem;
+    /* h3 {
+        
         margin: 1rem 0;
-        font-family: var(--font--phudu-bold);
-        color: var(--background-color);
 
-    }
+    } */
 
     /* main content */
 
@@ -556,7 +561,7 @@ footer {
         h3 {
             color: var(--foreground-color);
             font-family: var(--font-phudu-bold);
-            margin-top: 2rem;
+            /* margin-top: 2rem; */
         }
     }
 
