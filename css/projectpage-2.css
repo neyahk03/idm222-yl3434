@@ -292,6 +292,23 @@ li::marker {
     }
 }
 
+.two-column {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    div {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        border: 3px solid var(--accent-color-1);
+        border-radius: 15px;
+        box-shadow: 5px 5px var(--accent-color-1);
+    }
+}
+
 .step {
     /* background-color: var(--foreground-color); */
     padding: 1rem;
@@ -348,6 +365,7 @@ li::marker {
         border: 3px solid var(--accent-color-1);
         border-radius: 15px;
         box-shadow: 5px 5px var(--accent-color-1);
+        width: 100%;
     }
 
     p{
@@ -569,12 +587,19 @@ footer {
         }
     }
 
+    .two-column {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
     .process-container {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    img {
-        width: 70%;
+    .pic {
+        img {
+            width: 70%;
+        }
     }
 
     
